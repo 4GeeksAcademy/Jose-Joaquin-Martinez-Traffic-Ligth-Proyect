@@ -1,26 +1,31 @@
 import React from "react";
+import TrafficLight from "./trafficLight";
+import "./../../styles/index.css";
+import { useState } from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+/* La luz tiene que brillar cuando se hace clic.
+Todo el propósito del componente es mostrar un semáforo con luces de lectura,
+amarillas y verdes.
+Cuando se hace clic (se selecciona) alguna luz, 
+ésta debe brillar, pero las otras luces deben dejar de brillar.
 
+🔥 Bonus
+2 Crea un botón que, al hacer clic en él, 
+alterna el color seleccionado del semáforo entre rojo, verde y amarillo.
+
+10 Tener un botón que al hacer clic en él anuncie un color extra "púrpura" 
+al semáforo.
+ */
 //create your first component
 const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+  const [color, setColor] = useState("red");
+
+  return (
+    <div className="main-container">
+      <div className="top-pole"></div>
+      <TrafficLight />
+    </div>
+  );
 };
 
 export default Home;

@@ -1,0 +1,82 @@
+.light-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  min-height: 200px;
+  width: 60px;
+  border-radius: 10px;
+}
+.red-light,
+.orange-light,
+.green-light,
+.purple-light {
+  margin: 2px;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+.color-changing-btn {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  width: 2rem;
+  height: 2rem;
+  color: #333;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  font-size: 9px;
+  text-align: center;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.add-purple-color-btn {
+  background-color: #990e82;
+  border-radius: 5px;
+  width: 2rem;
+  height: 2rem;
+  color: black;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  font-size: 9px;
+  text-align: center;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+.color-changing-btn:hover {
+  background-color: #e0e0e0;
+}
+.red-light {
+  background-color: red;
+}
+.purple-light {
+  background-color: #990e82;
+}
+
+.orange-light {
+  background-color: orange;
+}
+.green-light {
+  background-color: green;
+}
+.red-selected {
+  box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.5);
+}
+.orange-selected {
+  box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.7); /* Amarillo */
+}
+.green-selected {
+  box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.7);
+}
+.purple-selected {
+  box-shadow: 0 0 20px 10px rgba(233, 7, 233, 0.7);
+}
